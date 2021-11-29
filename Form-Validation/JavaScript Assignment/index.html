@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="Script/script.js"></script>
+</head>
+<body>
+    
+<div id="first">
+    <h1>Submit Your Application</h1>
+<p>for<b>.NET Developers(Freshers)</b></p>
+</div>
+<h2>Personal Information</h2>
+<!-- Form Content Part -->
+<form  class="formfield"onsubmit="validate()" action="">
+    <p>Name as per Id Card <span style="color: red;">*</span><label id="labe1" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design" id="fname" type="text" placeholder="FirstName">
+    <p>Father's Name<span style="color: red;">*</span><label id="labe2" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design" id="lname" type="text" placeholder="LastName"> <br>
+   
+    <p>Email<span style="color: red;">*</span><label id="labe3" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design" id="email" type="text" placeholder="Email">
+    <p>Date of Birth<span style="color: red;">*</span><label id="labe4" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design1" id="dob" type="text" placeholder="Date Of Birth">
+    <p>Phone Number <span style="color: red;">*</span><label id="labe5" style="visibility:hidden ;color: red;">Invalid</label></p>
+    <input class="design1" id="pnumber" type="text" placeholder="Phone Number" >
+    <p>Current Address <span style="color: red;">*</span><label id="labe6" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design" id="address" type="text" placeholder="Building Name/Street Name">
+    <input class="design" id="address1" type="text" placeholder="City">
+    <input class="design1" id="address2" type="text" placeholder="Distric">
+    <select  name="state" id="states">
+        <option value="tamilnadu" selected >Tamilnadu</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Karnataka">Karnataka</option>
+
+    </select>
+    <p><label id="labe8" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design" id="zipcode" type="text" placeholder="Zipcode">
+    <!-- Permanent Address -->
+    <div id="permanent">
+        <pre id="check1" onchange="sameAddress()"> Permanent Address* <input id="copy" type="checkbox">same as present Address</pre>
+        <input class="design" id="address3" type="text" placeholder="Building Name/Street Name">
+        <input class="design" id="address4" type="text" placeholder="City">
+        <input class="design1" id="address5" type="text" placeholder="Distric">
+        <select name="state" id="states1 ">
+            <option value="tamilnadu" selected >Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+    
+        </select>
+        <p><label id="labe10" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input class="design" id="zipcode1" type="text" placeholder="Zipcode">
+
+    </div>
+    <p>Upload Profile Photo(JPG/PNG only)<label id="labe8" style="visibility: hidden;color: red;">Invalid</label></p>
+    <input id="upload" type="file">
+    <button type="button" onclick=" return validate()">Submit</button>
+    
+    
+    
+   
+</form>
+</body>
+</html>

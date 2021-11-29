@@ -1,0 +1,22 @@
+#first{
+    position: relative;;
+    left: 30%;
+}
+body{
+    position: relative;
+    left: 10%;
+    right:10%;
+    
+}
+.design{
+    width: 250px;
+    height: 25px;
+    padding: 10px;
+
+
+}
+.design1{
+    width: 125px;
+    height: 25px;
+    padding: 10px;
+}
